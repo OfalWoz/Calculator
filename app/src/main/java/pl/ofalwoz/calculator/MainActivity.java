@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,64 +22,25 @@ public class MainActivity extends AppCompatActivity {
         showCount = findViewById(R.id.show_count);
     }
 
-    public void CountUpButton(View view) {
-        count++;
-        if (showCount != null){
-            showCount.setText(Integer.toString(count));
-        }
-    }
-
-    public void CountDownButton(View view) {
-        count--;
-        if (showCount != null){
-            showCount.setText(Integer.toString(count));
-        }
-    }
-
     public void ResetButton(View view) {
-        count = 0;
         if (showCount != null){
-            showCount.setText(Integer.toString(count));
+            showCount.setText("");
         }
     }
 
-    public void oneButton(View view) {
-    }
-
-    public void twoButton(View view) {
-    }
-
-    public void threeButton(View view) {
+    public void onClickNumber(View view) {
+        if (showCount != null){
+            showCount.append(((Button)view).getText());
+        }
     }
 
     public void sumButton(View view) {
     }
 
-    public void fourButton(View view) {
-    }
-
-    public void fiveButton(View view) {
-    }
-
-    public void sixButton(View view) {
-    }
-
     public void subButton(View view) {
     }
 
-    public void sevenButton(View view) {
-    }
-
-    public void eightButton(View view) {
-    }
-
-    public void nineButton(View view) {
-    }
-
     public void mulButton(View view) {
-    }
-
-    public void zeroButton(View view) {
     }
 
     public void divButton(View view) {
