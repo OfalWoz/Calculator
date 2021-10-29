@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#DBDADB"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -24,11 +25,14 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/show_count"
+                    android:id="@+id/editText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
                     android:layout_weight="1"
-                    android:text=""
+                    android:background="#DBDADB"
+                    android:text="0"
+                    android:textColor="#35283C"
                     android:textSize="50sp" />
             </TableRow>
 
@@ -41,33 +45,45 @@
                     android:id="@+id/oneButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
                     android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
-                    android:text="1" />
+                    android:text="1"
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/twoButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="2"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/threeButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="3"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/sumButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:onClick="sumButton"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#35283C"
+                    android:onClick="operatorEvent"
                     android:text="+"
-                    android:layout_weight="1"/>
+                    android:textColor="#DBDADB" />
 
             </TableRow>
 
@@ -80,33 +96,45 @@
                     android:id="@+id/fourButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="4"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/fiveButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="5"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/sixButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="6"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/subButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:onClick="subButton"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#35283C"
+                    android:onClick="operatorEvent"
                     android:text="-"
-                    android:layout_weight="1"/>
+                    android:textColor="#DBDADB" />
             </TableRow>
 
             <TableRow
@@ -118,33 +146,45 @@
                     android:id="@+id/sevenButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="7"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/eightButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="8"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/nineButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="9"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:id="@+id/mulButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:onClick="mulButton"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#35283C"
+                    android:onClick="operatorEvent"
                     android:text="*"
-                    android:layout_weight="1"/>
+                    android:textColor="#DBDADB" />
             </TableRow>
 
             <TableRow
@@ -156,24 +196,33 @@
                     android:id="@+id/zeroButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#DBDADB"
                     android:onClick="onClickNumber"
                     android:text="0"
-                    android:layout_weight="1"/>
+                    android:textColor="#35283C" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
                     android:layout_weight="1"
+                    android:background="#35283C"
                     android:onClick="ResetButton"
-                    android:text="Clear" />
+                    android:text="Clear"
+                    android:textColor="#DBDADB" />
 
                 <Button
                     android:id="@+id/divButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:onClick="divButton"
+                    android:layout_margin="1pt"
+                    android:layout_weight="1"
+                    android:background="#35283C"
+                    android:onClick="operatorEvent"
                     android:text="/"
-                    android:layout_weight="1"/>
+                    android:textColor="#DBDADB" />
 
             </TableRow>
 
@@ -186,9 +235,12 @@
                     android:id="@+id/eqlButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="1pt"
                     android:layout_weight="1"
-                    android:onClick="eqlButton"
-                    android:text="=" />
+                    android:background="#35283C"
+                    android:onClick="eqlEvent"
+                    android:text="="
+                    android:textColor="#DBDADB" />
 
             </TableRow>
 
